@@ -1,0 +1,26 @@
+{
+  "name": "@at0g/cogent-code-test",
+  "version": "0.0.1",
+  "description": "An implementation of a packing algorythm",
+  "main": "index.js",
+  "author": "Ben Daley <ben@fanboy.io>",
+  "license": "MIT",
+  "scripts": {
+    "test": "npm run test:cli",
+    "test:cli": "NODE_ENV=test mocha --require babel-polyfill --compilers js:babel-register --require chai $(find src -name '*.spec.js')"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-eslint": "^7.2.3",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-latest": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "chai": "^3.5.0",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^5.0.1",
+    "eslint-plugin-react": "^7.0.1",
+    "mocha": "^3.4.1"
+  }
+}
