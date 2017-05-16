@@ -1,0 +1,25 @@
+{
+    "roses": {
+        "code": "R12",
+        "bundles": [
+            { "price": 6.99, "size": 5 },
+            { "price": 12.99, "size": 10 }
+        ]
+    },
+    "lillies": {
+        "code": "L09",
+        "bundles": [
+            { "price": 9.95, "size": 3 },
+            { "price": 16.95, "size": 6 },
+            { "price": 24.95, "size": 9 }
+        ]
+    },
+    "tulips": {
+        "code": "T58",
+        "bundles": [
+            { "price": 5.95, "size": 3 },
+            { "price": 9.95, "size": 5 },
+            { "price": 16.99, "size": 9 }
+        ]
+    }
+}
