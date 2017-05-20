@@ -7,7 +7,8 @@
   "license": "MIT",
   "scripts": {
     "test": "npm run test:cli",
-    "test:cli": "NODE_ENV=test mocha --require babel-polyfill --compilers js:babel-register --require chai $(find src -name '*.spec.js')"
+    "test:cli": "NODE_ENV=test mocha --opts mocha.opts $(find src -name '*.spec.js')",
+    "test:watch": "NODE_ENV=test mocha --opts mocha.opts --watch --reporter min $(find src -name '*.spec.js')"
   },
   "devDependencies": {
     "babel": "^6.23.0",
@@ -21,6 +22,8 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^5.0.1",
     "eslint-plugin-react": "^7.0.1",
-    "mocha": "^3.4.1"
+    "mocha": "^3.4.1",
+    "sinon": "^2.2.0",
+    "sinon-chai": "^2.10.0"
   }
 }

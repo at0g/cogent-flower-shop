@@ -1,0 +1,4 @@
+--require babel-polyfill
+--compilers js:babel-register
+--require chai
+--require ./src/testScaffold
