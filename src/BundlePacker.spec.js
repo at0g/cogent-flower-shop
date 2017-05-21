@@ -30,5 +30,16 @@ describe('BundlePacker', () => {
                     { quantity: 1, ...bundles[0] },
                 ]);
         });
+
+        // This logic is debatable...
+        // In the knapsack problem, the capacity can never be exceeded.
+        // However in the case of making a shopping order (such as 4 roses), is it
+        // better to receive 3 roses or 5 roses?
+        // In my opinion, I think 5 would be better for both consumer and supplier.
+        it('returns 5 tulips when 4 have been requested', () => {
+            const bundles = tulips.bundles;
+            expect(BundlePacker.choose(4, bundles))
+                .to.eql([{ quantity: 1, ...bundles[1] }]);
+        });
     });
 });
