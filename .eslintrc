@@ -14,10 +14,11 @@
   },
   "extends": "airbnb",
   "rules": {
+    "brace-style": [2, "stroustrup"],
     "indent": ["error", 4, {
       "SwitchCase": 1
     }],
     "import/extensions": 0,
-    "import/no-extraneous-dependencies": 0,
+    "import/no-extraneous-dependencies": 0
   }
 }

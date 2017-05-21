@@ -3,7 +3,6 @@ import sinon from 'sinon';
 import Knapsack from './KnapsackUnbounded';
 
 describe('KnapsackUnbounded', () => {
-
     describe('solve', () => {
         const solve = Knapsack.solve;
 
@@ -81,5 +80,4 @@ describe('KnapsackUnbounded', () => {
             ].forEach(values => expect(solve(10, values)).to.eql(expected));
         });
     });
-
 });

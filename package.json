@@ -9,6 +9,7 @@
     "coverage": "npm test && npm run coverage:html",
     "coverage:check": "nyc check-coverage --lines 100 --functions 100 --branches 100",
     "coverage:html": "npm test && nyc report --reporter html",
+    "lint": "eslint './src/**/*.js'",
     "test": "npm run test:cli && npm run coverage:check",
     "test:cli": "NODE_ENV=test nyc mocha --opts mocha.opts $(find src -name '*.spec.js')",
     "test:watch": "NODE_ENV=test mocha --opts mocha.opts --watch --reporter min $(find src -name '*.spec.js')"

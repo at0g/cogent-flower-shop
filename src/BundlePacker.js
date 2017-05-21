@@ -57,7 +57,8 @@ export default class BundlePacker {
                     // If a match is found, increment the quantity.
                     // eslint-disable-next-line no-param-reassign
                     memo[memo.indexOf(match)].quantity += 1;
-                } else {
+                }
+                else {
                     // If no match is found, add the bundle to the aggregate.
                     const bundle = bundles.find(({ size }) => size === value);
                     memo.push({ ...bundle, quantity: 1 });

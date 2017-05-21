@@ -12,6 +12,7 @@ This package is a solution to the ["flower-shop" code test](./flower_shop.pdf) f
 
 - `npm test`: runs mocha and istanbul.
 - `npm run test:watch`: runs mocha in watch mode with the min reporter.
+- `npm run lint`: runs eslint.
 - `npm run coverage`: runs tests and generates a code coverage html report.
 
 ## The solution...

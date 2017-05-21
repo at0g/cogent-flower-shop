@@ -56,9 +56,11 @@ export default class KnapsackUnbounded {
         for (let i = 0; i <= capacity; i += 1) {
             if (i < min) {
                 combinations.push([0]);
-            } else if (i <= max && items.includes(i)) {
+            }
+            else if (i <= max && items.includes(i)) {
                 combinations.push([i]);
-            } else {
+            }
+            else {
                 // if the value of this iteration does not exist in the items array, move backwards
                 // through the solved combinations and reduce the results to the best fit.
                 const combination = combinations.reduceRight((memo, values, j) => {
