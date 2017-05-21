@@ -11,6 +11,21 @@ describe('KnapsackUnbounded', () => {
             expect(solve).to.be.a('function');
         });
 
+        it('throws a TypeError if items is not provided', () => {
+            expect(() => solve(42)).to.throw(TypeError);
+        });
+
+        it('throws a RangeError if items does not have a positive length', () => {
+            expect(() => solve(42, [])).to.throw(RangeError);
+        });
+
+        it('throws a TypeError if capacity is not a positive integer', () => {
+            [-1, 0, 1.2, 'foo', Infinity, () => null, null, undefined]
+                .forEach(invalidInput =>
+                    expect(() => solve(invalidInput, [1])).to.throw(TypeError),
+                );
+        });
+
         it('returns a single value that exists in items', () => {
             expect(solve(42, [42])).to.eql([42]);
         });
