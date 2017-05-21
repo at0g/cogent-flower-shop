@@ -2,7 +2,7 @@
   "name": "@at0g/cogent-code-test",
   "version": "0.0.1",
   "description": "An implementation of a packing algorythm",
-  "main": "index.js",
+  "main": "src/BundlePacker.js",
   "author": "Ben Daley <ben@fanboy.io>",
   "license": "MIT",
   "scripts": {
