@@ -1,10 +1,14 @@
 {
-  "name": "@at0g/cogent-code-test",
+  "name": "@at0g/cogent-flower-shop",
   "version": "0.0.1",
   "description": "An implementation of a packing algorythm",
   "main": "src/BundlePacker.js",
   "author": "Ben Daley <ben@fanboy.io>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/at0g/cogent-flower-shop.git"
+  },
   "scripts": {
     "coverage": "npm test && npm run coverage:html",
     "coverage:check": "nyc check-coverage --lines 100 --functions 100 --branches 100",
