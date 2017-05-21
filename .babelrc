@@ -2,5 +2,16 @@
   "presets": [
     "latest",
     "stage-3"
-  ]
+  ],
+  "env": {
+    "test": {
+      "plugins": [
+        ["istanbul", {
+          "exclude": [
+            "**/*.spec.js"
+          ]
+        }]
+      ]
+    }
+  }
 }

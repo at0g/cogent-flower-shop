@@ -4,13 +4,15 @@ This package is a solution to the ["flower-shop" code test](./flower_shop.pdf) f
  written in JavaScript. The implementation uses a domain specific BundlePicker, that relies on an unbounded
  knapsack algorythm.
 
-
 ## Installation
+
 `yarn` (or `npm install`)
 
 ## Scripts
-- `npm test`: runs mocha.
+
+- `npm test`: runs mocha and istanbul.
 - `npm run test:watch`: runs mocha in watch mode with the min reporter.
+- `npm run coverage`: runs tests and generates a code coverage html report.
 
 ## The solution...
 
