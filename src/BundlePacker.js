@@ -6,8 +6,18 @@ export default class BundlePacker {
         // Map the bundles to an array of sizes that is suitable for Knapsack input.
         const items = bundles.map(({ size }) => size);
 
+        // If the result is less than the requested quantity, run a loop that increments
+        // the value passed to Knapsack.solve until the quantity is met or exceeded.
+        let result = null;
+        let counter = 0;
+        do {
+            result = Knapsack.solve(quantity + counter, items);
+            counter += 1;
+        }
+        while (quantity > result.reduce((memo, value) => memo + value, 0));
+
         // Aggregate the Knapsack results into unique/distinct bundles with a quantity property.
-        return Knapsack.solve(quantity, items)
+        return result
             .reduce((memo, value) => {
                 const match = memo.find(({ size }) => size === value);
                 if (match) {
